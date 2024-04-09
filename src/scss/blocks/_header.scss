@@ -1,8 +1,15 @@
+.header {
+    position: relative;
+    z-index: 100;
+}
+
 .top-header {
     padding: 10px 0;
     border-bottom: 1px solid #ECF3FF;
+    background-color: var(--color-white);
 
     &__container {
+        position: relative;
         display: flex;
         align-items: center;
         gap: 30px;

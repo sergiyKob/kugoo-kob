@@ -1,4 +1,5 @@
-import burger from './modules/burger.js';
+// import burger from './modules/burger.js';
+import phonesList from './modules/phones-list.js';
 // import menuActive from './modules/menuActive.js';
 // import swiper from './modules/slider.js';
 // import modal from './modules/modal.js';
