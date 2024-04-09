@@ -1,0 +1,51 @@
+.online-chat {
+    &__list {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        border-radius: var(--rounded-sm);
+
+        &:focus {
+            box-shadow: 0 0 0 1px var(--color-gray-200);
+        }
+
+    }
+
+    &__icon {
+        fill: var(--color-gray-600);
+        transition:
+            fill var(--transition),
+            opacity var(--transition);
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+
+    &__icon--viber {
+        @include hover {
+            fill: var(--color-accent);
+        }
+    }
+
+    &__icon--whatsapp {
+        @include hover {
+            fill: var(--color-green);
+        }
+
+    }
+
+    &__icon--telegram {
+        @include hover {
+            fill: var(--color-blue);
+        }
+    }
+}
