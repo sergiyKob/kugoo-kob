@@ -14,7 +14,7 @@ body {
     font-weight: var(--font-weight);
     font-size: var(--font-size);
     background-color: var(--color-white);
-    color: var(--color-black);
+    color: var(--color-dark);
     line-height: var(--line-height);
     overflow-x: hidden;
     scrollbar-gutter: stable;
@@ -203,4 +203,24 @@ body {
         justify-content: center;
     }
 
+}
+
+.link {
+    border-radius: var(--rounded-sm);
+    transition:
+        box-shadow var(--transition),
+        color var(--transition),
+        opacity var(--transition);
+
+    &:focus {
+        box-shadow: 0 0 0 2px var(--color-accent-30)
+    }
+
+    @include hover {
+        color: var(--color-accent);
+    }
+
+    &:active {
+        opacity: 0.8;
+    }
 }

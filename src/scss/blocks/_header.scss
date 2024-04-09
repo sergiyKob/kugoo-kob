@@ -1,0 +1,25 @@
+.top-header {
+    padding: 10px 0;
+    border-bottom: 1px solid #ECF3FF;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    &__link {
+        padding: 0 2px;
+        border-radius: var(--rounded-sm);
+    }
+
+    &__phones {
+        margin-left: auto;
+    }
+}
