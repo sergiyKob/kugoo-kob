@@ -1,0 +1,28 @@
+.actions-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__btn {
+        min-width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        color: var(--color-dark);
+        padding: 0 10px;
+
+
+        @include hover {
+            background-color: var(--color-bg);
+            color: var(--color-accent);
+
+            .actions-header__btn-icon {
+                fill: var(--color-accent);
+            }
+        }
+
+    }
+
+    &__btn-icon {
+        transition: fill var(--transition);
+    }
+}
