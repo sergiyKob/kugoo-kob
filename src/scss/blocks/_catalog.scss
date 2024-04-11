@@ -11,8 +11,8 @@
     visibility: hidden;
     transition:
         top var(--transition) ease-in-out,
-        opacity var(--transition),
-        visibility var(--transition);
+        opacity var(--transition) ease-in-out,
+        visibility var(--transition) ease-in-out;
     z-index: -1;
 
     &--open {

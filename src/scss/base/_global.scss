@@ -92,7 +92,7 @@ body {
 
 .custom-scrollbar {
     &::-webkit-scrollbar {
-        width: 5px;
+        width: 3px;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -198,6 +198,8 @@ body {
         align-items: center;
         justify-content: center;
     }
+
+
 
 }
 

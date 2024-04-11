@@ -437,12 +437,125 @@
                 </a>
             </li>
             <li class="actions-header__item">
-                <button class="actions-header__btn btn btn--with-icon" type="button">
-                    <svg class="actions-header__btn-icon" width="16" height="16">
+                <button class="actions-header__btn btn btn--with-icon" type="button" data-cart>
+                    <svg class="actions-header__btn-icon" width="16" height="16" data-cart-icon>
                         <use xlink:href="img/sprite.svg#icon-cart-empty"></use>
                     </svg>
                     Корзина
                 </button>
+                <div class="cart">
+                    <div class="cart__top">
+                        <span class="cart__title">В вашей корзине</span>
+                        <span class="cart__count">5 товаров</span>
+                    </div>
+
+                    <ul class="cart__list hidden-scrollbar custom-scrollbar">
+                        <li class="cart__item">
+                            <article class="cart-product">
+                                <div class="cart-product__img">
+                                    <img src="img/product/01.jpg" width="50" height="50" alt="Kugoo Kirin M4">
+                                </div>
+                                <h3 class="cart-product__title">
+                                    <a class="cart-product__link link" href="#" title="Kugoo Kirin M4">Kugoo Kirin M4</a>
+                                </h3>
+                                <div class="cart-product__info">
+                                    <span class="cart-product__price">29 900 ₽</span>
+                                    <span class="cart-product__count">1 шт.</span>
+                                </div>
+                                <button class="cart-product__del btn btn--only-icon">
+                                    <svg class="cart-product__del-icon" width="20" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-del"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </li>
+                        <li class="cart__item">
+                            <article class="cart-product">
+                                <div class="cart-product__img">
+                                    <img src="img/product/01.jpg" width="50" height="50" alt="Kugoo Kirin M4">
+                                </div>
+                                <h3 class="cart-product__title">
+                                    <a class="cart-product__link link" href="#" title="Kugoo Kirin M4 Lorem ipsum dolor, sit amet consectetur">Kugoo Kirin M4 Lorem ipsum dolor, sit
+                                        amet consectetur</a>
+                                </h3>
+                                <div class="cart-product__info">
+                                    <span class="cart-product__price">29 900 ₽</span>
+                                    <span class="cart-product__count">1 шт.</span>
+                                </div>
+                                <button class="cart-product__del btn btn--only-icon">
+                                    <svg class="cart-product__del-icon" width="20" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-del"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </li>
+                        <li class="cart__item">
+                            <article class="cart-product">
+                                <div class="cart-product__img">
+                                    <img src="img/product/01.jpg" width="50" height="50" alt="Kugoo Kirin M4">
+                                </div>
+                                <h3 class="cart-product__title">
+                                    <a class="cart-product__link link" href="#" title="Kugoo Kirin M4">Kugoo Kirin M4</a>
+                                </h3>
+                                <div class="cart-product__info">
+                                    <span class="cart-product__price">29 900 ₽</span>
+                                    <span class="cart-product__count">1 шт.</span>
+                                </div>
+                                <button class="cart-product__del btn btn--only-icon">
+                                    <svg class="cart-product__del-icon" width="20" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-del"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </li>
+                        <li class="cart__item">
+                            <article class="cart-product">
+                                <div class="cart-product__img">
+                                    <img src="img/product/01.jpg" width="50" height="50" alt="Kugoo Kirin M4">
+                                </div>
+                                <h3 class="cart-product__title">
+                                    <a class="cart-product__link link" href="#" title="Kugoo Kirin M4">Kugoo Kirin M4</a>
+                                </h3>
+                                <div class="cart-product__info">
+                                    <span class="cart-product__price">29 900 ₽</span>
+                                    <span class="cart-product__count">1 шт.</span>
+                                </div>
+                                <button class="cart-product__del btn btn--only-icon">
+                                    <svg class="cart-product__del-icon" width="20" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-del"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </li>
+                        <li class="cart__item">
+                            <article class="cart-product">
+                                <div class="cart-product__img">
+                                    <img src="img/product/01.jpg" width="50" height="50" alt="Kugoo Kirin M4">
+                                </div>
+                                <h3 class="cart-product__title">
+                                    <a class="cart-product__link link" href="#" title="Kugoo Kirin M4">Kugoo Kirin M4</a>
+                                </h3>
+                                <div class="cart-product__info">
+                                    <span class="cart-product__price">29 900 ₽</span>
+                                    <span class="cart-product__count">1 шт.</span>
+                                </div>
+                                <button class="cart-product__del btn btn--only-icon">
+                                    <svg class="cart-product__del-icon" width="20" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-del"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </li>
+                    </ul>
+
+                    <div class="cart__bottom">
+                        <div class="cart__summ">
+                            Сумма:
+                            <div class="cart__summ-price">59 800 ₽</div>
+                        </div>
+                        <button class="cart__btn btn btn--primary btn--sm">Оформить заказ</button>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
@@ -455,6 +568,11 @@
 
 </header>
         <div class="main">
+            <div class="container">
+
+            </div>
+
+
         </div>
         
     </div>
