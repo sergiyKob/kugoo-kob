@@ -3,6 +3,7 @@
     z-index: 100;
 
     &__middle {
+        position: relative;
         display: flex;
         align-items: center;
         padding-top: 30px;
@@ -15,6 +16,14 @@
 
     &__catalog {
         margin-right: 20px;
+    }
+
+    &__catalog-btn {
+        padding: 10px;
+    }
+
+    &__catalog-btn-icon {
+        fill: var(--color-white);
     }
 
     &__search {

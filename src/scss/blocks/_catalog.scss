@@ -1,9 +1,113 @@
 .catalog {
-    &__btn {
-        padding: 10px;
+    position: absolute;
+    top: 70px;
+    left: 166px;
+    display: flex;
+    padding: 10px;
+    border-radius: var(--rounded-md);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        top var(--transition) ease-in-out,
+        opacity var(--transition),
+        visibility var(--transition);
+    z-index: -1;
+
+    &--open {
+        opacity: 1;
+        visibility: visible;
+        top: 100px;
+        z-index: 10;
     }
 
-    &__btn-icon {
-        fill: var(--color-white);
+    &__categories {
+        background-color: var(--color-bg);
+        border-radius: var(--rounded-md);
+        font-size: 16px;
+        font-weight: 600;
+        width: 235px;
+    }
+
+    &__item {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &:first-child {
+            padding-top: 15px;
+        }
+
+        &:last-child {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__item--active {
+        .subcategories {
+            display: flex;
+        }
+
+        .catalog__link {
+            color: var(--color-accent);
+        }
+
+        .catalog__icon {
+            fill: var(--color-accent);
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        padding: 9px 10px;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        fill: var(--color-gray-600);
+        transition: fill var(--transition);
+    }
+}
+
+.subcategories {
+    position: absolute;
+    top: 0;
+    left: 255px;
+    bottom: 0;
+    min-height: 220px;
+    min-width: 500px;
+    display: none;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 50px;
+    background-color: var(--color-white);
+    border-radius: var(--rounded-md);
+
+    &__col {
+        flex-shrink: 0;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
+    }
+
+    &__link {
+        color: var(--color-gray-600);
+        font-weight: 400;
+        padding: 2px 0;
     }
 }

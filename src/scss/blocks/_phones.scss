@@ -54,6 +54,7 @@
         overflow: hidden;
         opacity: 0;
         visibility: hidden;
+        z-index: 100;
         transition:
             opacity var(--transition),
             visibility var(--transition);
