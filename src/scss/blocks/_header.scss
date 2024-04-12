@@ -33,6 +33,11 @@
     }
 
     &__actions {}
+
+    &__bottom {
+        background-color: var(--color-bg);
+        padding: 10px 0;
+    }
 }
 
 .top-header {

@@ -212,7 +212,7 @@ body {
         opacity var(--transition);
 
     &:focus {
-        box-shadow: 0 0 0 2px var(--color-accent-30)
+        box-shadow: 0 0 0 3px var(--color-accent-30)
     }
 
     @include hover {
@@ -241,6 +241,4 @@ body {
     &:active {
         opacity: 0.7;
     }
-
-    &__img {}
 }
