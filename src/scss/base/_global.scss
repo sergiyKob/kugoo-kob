@@ -60,7 +60,7 @@ body {
 .container-right {
     padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
 
-    @include mq("desktop") {
+    @include mq("tablet-sm") {
         padding-left: var(--container-padding);
         padding-right: var(--container-padding);
     }
@@ -252,4 +252,33 @@ body {
     column-gap: 45px;
 }
 
-.input {}
+.title {
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.label {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px 10px;
+    border-radius: var(--rounded-md);
+
+    &--red {
+        background-color: var(--color-red);
+    }
+
+    &--green {
+        background-color: var(--color-green);
+    }
+}
+
+.swiper-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-button-disabled {
+    opacity: 0.5;
+}

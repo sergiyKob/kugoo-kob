@@ -1,27 +1,32 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const slider = new Swiper('.slider', {
+const slider = new Swiper('.hero-slider', {
     spaceBetween: 15,
-    slidesPerView: 3,
+    slidesPerView: 1,
     loop: false,
-    // speed: 1000,
-    // autoplay: {
-    //     delay: 4000,
-    // },
+    speed: 800,
 
     pagination: {
-        el: '.slider__pagination',
-        clickable: true,
-        dynamicBullets: true,
-        // renderBullet: function (index, className) {
-        //     return '<span class="' + className + '">' + (index + 1) + "</span>";
-        // },
+        el: '.hero-slider__pagination',
+
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+            return (
+                '<span class="' +
+                currentClass +
+                '"></span>' +
+                ' / ' +
+                '<span class="' +
+                totalClass +
+                '"></span>'
+            );
+        },
     },
 
     navigation: {
-        nextEl: '.slider__next',
-        prevEl: '.slider__prev',
+        nextEl: '.hero-slider__next',
+        prevEl: '.hero-slider__prev',
     },
 
     // breakpoints: {
@@ -33,5 +38,3 @@ const slider = new Swiper('.slider', {
     //     },
     // },
 });
-
-export default slider;
