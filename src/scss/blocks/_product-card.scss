@@ -1,0 +1,140 @@
+.product-card {
+    position: relative;
+    max-width: 255px;
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--rounded-lg);
+    transition: border var(--transition);
+    overflow: hidden;
+
+    @include hover {
+        border: 1px solid var(--color-accent);
+    }
+
+    &__label,
+    &__actions--compare {
+        position: absolute;
+        top: 10px;
+        z-index: 2;
+    }
+
+    &__label {
+        left: 10px;
+    }
+
+    &__slider {
+        height: 230px;
+        background-color: #F0F1F5;
+    }
+
+
+    &__body {
+        padding: 20px 24px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        display: block;
+        @include line-clamp(1);
+    }
+
+    &__list {
+        font-family: "Roboto", sans-serif;
+        color: var(--color-gray-600);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 25px;
+        width: calc(50% - 10px);
+
+        &::before {
+            @include pseudo;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        &--accumulator::before {
+            background-image: url('../img/icons-not-sprite/icon-accumulator.svg');
+        }
+
+        &--power::before {
+            background-image: url('../img/icons-not-sprite/icon-power.svg');
+        }
+
+        &--speedometr::before {
+            background-image: url('../img/icons-not-sprite/icon-speedometr.svg');
+        }
+
+        &--timer::before {
+            background-image: url('../img/icons-not-sprite/icon-timer.svg');
+        }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    &__actions-wrap {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__actions {
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--color-gray-200);
+        border-radius: 100%;
+
+        @include hover {
+            background-color: var(--color-bg);
+        }
+    }
+
+    &__actions-icon {
+        fill: var(--color-accent);
+    }
+
+    &__actions--compare {
+        right: 10px;
+        border: transparent;
+        background-color: var(--color-white-20);
+
+        svg {
+            transition: fill var(--transition);
+        }
+
+        @include hover {
+            svg {
+                fill: var(--color-accent);
+            }
+        }
+    }
+
+    &__price {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &__price-old {
+        font-size: 12px;
+        color: var(--color-gray-600);
+        text-decoration: line-through;
+    }
+}

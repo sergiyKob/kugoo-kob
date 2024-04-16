@@ -1,0 +1,34 @@
+.product-filter {
+    margin-bottom: 105px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+    &__control {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    &__bottom {
+        text-align: center;
+    }
+
+    &__btn {
+        color: var(--color-accent);
+        box-shadow: 0 0 0 1px var(--color-accent);
+        background-color: var(--color-white);
+    }
+}

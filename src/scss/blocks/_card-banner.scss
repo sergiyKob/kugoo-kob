@@ -1,0 +1,78 @@
+.card-banner {
+    position: relative;
+    max-width: 540px;
+    background-color: var(--color-bg);
+    border-radius: var(--rounded-lg);
+    overflow: hidden;
+    transition: background-color var(--transition);
+
+    @include hover {
+        background-color: var(--color-accent-15);
+
+        .card-banner__action-icon {
+            transform: translateX(5px);
+        }
+    }
+
+    &::before {
+        @include pseudo;
+        left: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 446px;
+        height: 446px;
+        background-color: var(--color-accent);
+        border-radius: 100%;
+        z-index: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 100%;
+        padding: 45px 35px 35px;
+        border-radius: var(--rounded-lg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        position: relative;
+        z-index: 1;
+
+        &:focus {
+            .card-banner__action {
+                box-shadow: 0 0 0 3px var(--color-accent-30);
+            }
+        }
+
+    }
+
+    &__inner {
+        max-width: 285px;
+    }
+
+    &__title {
+        @include line-clamp(2);
+        margin-bottom: 10px;
+        text-wrap: balance;
+    }
+
+    &__descr {
+        @include line-clamp(2);
+        font-size: 16px;
+        text-wrap: balance;
+        margin-bottom: 20px;
+    }
+
+    &__action {
+        color: var(--color-accent);
+        display: inline-flex;
+        align-items: center;
+        justify-content: start;
+        gap: 5px;
+        border-radius: var(--rounded-md);
+    }
+
+    &__action-icon {
+        fill: var(--color-accent);
+        transition: var(--transition);
+    }
+}

@@ -13,7 +13,6 @@
         top var(--transition) ease-in-out,
         opacity var(--transition) ease-in-out,
         visibility var(--transition) ease-in-out;
-    z-index: -1;
 
     &--open {
         opacity: 1;

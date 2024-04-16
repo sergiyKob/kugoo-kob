@@ -1,0 +1,9 @@
+.banners {
+    margin-bottom: 115px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}

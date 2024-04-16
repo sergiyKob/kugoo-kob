@@ -3,6 +3,7 @@ import phonesList from './modules/phones-list.js';
 import catalog from './modules/catalog.js';
 import cart from './modules/cart.js';
 import swiper from './modules/slider.js';
+import productSlider from './modules/product-slider.js';
 // import menuActive from './modules/menuActive.js';
 // import modal from './modules/modal.js';
 // import tabs from './modules/tabs.js';

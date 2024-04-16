@@ -197,6 +197,11 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        user-select: none;
+    }
+
+    &--full {
+        width: 100%;
     }
 
 
@@ -256,14 +261,34 @@ body {
     font-size: 35px;
     font-weight: 600;
     text-transform: uppercase;
+
+    &--md {
+        font-size: 25px;
+    }
 }
 
 .label {
     display: inline-block;
     font-size: 12px;
     line-height: 1;
-    padding: 5px 10px;
+    padding: 7px 10px;
+    color: var(--color-white);
     border-radius: var(--rounded-md);
+    transition:
+        opacity var(--transition),
+        box-shadow var(--transition);
+
+    &:focus {
+        box-shadow: 0 0 0 3px var(--color-accent-30)
+    }
+
+    @include hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
 
     &--red {
         background-color: var(--color-red);

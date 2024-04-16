@@ -1,0 +1,10 @@
+.filter-control {
+    &__item {}
+
+    &__btn {}
+
+    &__btn--active {
+        color: var(--color-accent);
+        box-shadow: 0 0 0 2px var(--color-accent);
+    }
+}
