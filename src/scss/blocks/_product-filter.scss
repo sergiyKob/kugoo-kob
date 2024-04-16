@@ -9,13 +9,13 @@
         margin-bottom: 50px;
     }
 
-    &__control {
+    &__list {
         display: flex;
         align-items: center;
         gap: 10px;
     }
 
-    &__body {
+    &__cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 30px;
@@ -26,7 +26,7 @@
         text-align: center;
     }
 
-    &__btn {
+    &__btn-more {
         color: var(--color-accent);
         box-shadow: 0 0 0 1px var(--color-accent);
         background-color: var(--color-white);

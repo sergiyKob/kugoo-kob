@@ -307,3 +307,12 @@ body {
 .swiper-button-disabled {
     opacity: 0.5;
 }
+
+.mixitup-control-active {
+    color: var(--color-accent);
+    box-shadow: 0 0 0 2px var(--color-accent);
+
+    &:focus {
+        box-shadow: 0 0 0 2px var(--color-accent);
+    }
+}

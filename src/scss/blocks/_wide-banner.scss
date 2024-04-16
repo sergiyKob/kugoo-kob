@@ -1,0 +1,34 @@
+.wide-banner {
+    position: relative;
+    min-height: 420px;
+    border-radius: var(--rounded-lg);
+    color: var(--color-white);
+    background: radial-gradient(708.28% 82.86% at 23.3% 72.57%, rgb(89, 89, 89) 0%, rgb(59, 62, 70) 100%);
+    margin: 0 30px 100px;
+    overflow: hidden;
+
+    &__container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    &__inner {
+        position: relative;
+        max-width: 450px;
+        padding: 70px 0;
+        z-index: 2;
+
+    }
+
+    &__img {
+        position: absolute;
+        left: 200px;
+        bottom: -200px;
+        // opacity: 0.5;
+    }
+
+    &__label,
+    &__title {
+        margin-bottom: 25px;
+    }
+}
