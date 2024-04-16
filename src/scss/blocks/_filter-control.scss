@@ -3,8 +3,13 @@
 
     &__btn {}
 
-    &__btn--active {
-        color: var(--color-accent);
+}
+
+.mixitup-control-active {
+    color: var(--color-accent);
+    box-shadow: 0 0 0 2px var(--color-accent);
+
+    &:focus {
         box-shadow: 0 0 0 2px var(--color-accent);
     }
 }
