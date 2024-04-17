@@ -1,0 +1,33 @@
+.benefits-dealer {
+    border-radius: var(--rounded-lg);
+    background-color: var(--color-white);
+    padding: 20px;
+
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 20px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &::before {
+            @include pseudo;
+            left: 0;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background-image: url('../img/icons-not-sprite/icon-triangle.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+        }
+    }
+}

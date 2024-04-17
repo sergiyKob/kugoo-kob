@@ -1,0 +1,41 @@
+.test-drive {
+    position: relative;
+    max-width: 240px;
+    color: var(--color-white);
+    backdrop-filter: blur(10px);
+    background: var(--color-white-20);
+    border-radius: var(--rounded-lg);
+    padding: 15px 15px 55px;
+
+
+    &__title {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    &__link {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-radius: var(--rounded-lg);
+        padding: 12px 25px;
+
+        &:focus {
+            box-shadow: 0 0 0 3px var(--color-white-20);
+        }
+
+        @include hover {
+            .test-drive__btn-icon {
+                transform: translateX(5px);
+            }
+        }
+
+    }
+
+    &__btn-icon {
+        fill: var(--color-white);
+        transition: transform var(--transition);
+    }
+}
