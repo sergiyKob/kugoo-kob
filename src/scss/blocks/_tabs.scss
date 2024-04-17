@@ -1,0 +1,22 @@
+.tabs {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    &--active {
+        box-shadow: 0 0 0 1px var(--color-accent);
+        color: var(--color-accent);
+    }
+
+    &__content {
+        display: none;
+    }
+
+    &__content--active {
+        display: block;
+    }
+}

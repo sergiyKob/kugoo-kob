@@ -1,13 +1,13 @@
-
 const tabButtons = document.querySelectorAll('[data-tab]');
+console.log(tabButtons);
 const tabContents = document.querySelectorAll('[data-content]');
 
 tabButtons.forEach(function (item) {
     item.addEventListener('click', function () {
         tabButtons.forEach(function (item) {
-            item.classList.remove('tabs__btn--active');
+            item.classList.remove('tabs--active');
         })
-        this.classList.add('tabs__btn--active');
+        this.classList.add('tabs--active');
 
         const tabCurrent = this.dataset.tab
         tabContents.forEach(function (item) {
