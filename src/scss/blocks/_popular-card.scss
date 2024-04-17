@@ -1,0 +1,59 @@
+.popular-card {
+    max-width: 255px;
+    min-height: 255px;
+    background-color: silver;
+    color: var(--color-white);
+    border-radius: var(--rounded-lg);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__body {
+        position: relative;
+        backdrop-filter: blur(10px);
+        background: var(--color-black-20);
+        border-radius: var(--rounded-lg);
+        padding: 10px 16px;
+        border: 2px solid rgba(149, 149, 147, 0.2);
+        transition: transform var(--transition);
+
+        @include hover {
+            transform: translateY(-5px);
+        }
+
+        &:active {
+            .popular-card__link {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 5px;
+        padding: 3px;
+    }
+
+    &__link {
+        transition: opacity var(--transition);
+
+        &::after {
+            @include pseudo;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 3px var(--color-white-20);
+            border-radius: var(--rounded-md);
+        }
+    }
+
+}

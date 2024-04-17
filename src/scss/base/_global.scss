@@ -170,11 +170,19 @@ body {
         color: var(--color-gray-600);
 
         @include hover {
-            box-shadow: 0 0 0 2px var(--color-accent);
+            box-shadow: 0 0 0 1px var(--color-accent);
             color: var(--color-accent);
         }
+    }
 
+    &--third {
+        color: var(--color-accent);
+        border: 1px solid var(--color-accent);
 
+        @include hover {
+            color: var(--color-white);
+            background-color: var(--color-accent);
+        }
     }
 
     &--lg {
@@ -310,9 +318,13 @@ body {
 
 .mixitup-control-active {
     color: var(--color-accent);
-    box-shadow: 0 0 0 2px var(--color-accent);
+    box-shadow: 0 0 0 1px var(--color-accent);
 
     &:focus {
-        box-shadow: 0 0 0 2px var(--color-accent);
+        box-shadow: 0 0 0 1px var(--color-accent);
     }
+}
+
+.text-center {
+    text-align: center;
 }
