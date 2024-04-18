@@ -1,5 +1,4 @@
 const tabButtons = document.querySelectorAll('[data-tab]');
-console.log(tabButtons);
 const tabContents = document.querySelectorAll('[data-content]');
 
 tabButtons.forEach(function (item) {
