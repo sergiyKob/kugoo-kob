@@ -1,0 +1,28 @@
+.rating {
+    position: relative;
+    width: 70px;
+    font-size: 0;
+    color: #e5e5e5;
+
+    &::after {
+        content: "★★★★★";
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    &__progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        color: var(--color-yellow);
+
+
+        &::after {
+            content: "★★★★★";
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+    }
+}

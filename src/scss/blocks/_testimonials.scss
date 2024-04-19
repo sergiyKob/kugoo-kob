@@ -1,0 +1,41 @@
+.testimonials {
+    margin-bottom: 100px;
+
+    &__top {
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        color: var(--color-accent);
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+
+        @include hover {
+            opacity: 0.9;
+        }
+    }
+
+    &__link-icon {
+        fill: var(--color-accent);
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+    }
+
+    &__item {
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(5) {
+            grid-column: span 2;
+        }
+    }
+}
