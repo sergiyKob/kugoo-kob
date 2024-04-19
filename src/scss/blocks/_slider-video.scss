@@ -1,0 +1,33 @@
+.slider-video {
+    height: 400px;
+    border-radius: 10px 0 0 10px;
+
+    &__slide {
+        padding: 2px;
+        height: 200px;
+        transition:
+            height 0.4s ease,
+            width 0.4s ease;
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 20%;
+        right: 12%;
+        z-index: 2;
+    }
+
+    &__prev {
+        display: none;
+    }
+
+    .swiper-slide-active {
+        height: 360px !important;
+        width: 540px !important;
+
+        .video-card__link {
+            min-height: 360px;
+        }
+    }
+}

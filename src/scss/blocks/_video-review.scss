@@ -1,0 +1,26 @@
+.video-review {
+    margin-bottom: 100px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    &__descr {
+        max-width: 35%;
+        color: var(--color-gray-600);
+        margin-bottom: 35px;
+    }
+
+    &__link {
+        color: var(--color-accent);
+        display: flex;
+        align-items: center;
+    }
+
+    &__link-icon {
+        fill: var(--color-accent);
+    }
+}
