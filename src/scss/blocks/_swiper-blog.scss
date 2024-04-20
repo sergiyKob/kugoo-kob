@@ -1,0 +1,16 @@
+.swiper-blog {
+    position: relative;
+
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        right: 30%;
+        z-index: 2;
+        transform: translateY(-50%);
+    }
+
+    &__prev {
+        display: none;
+    }
+}
