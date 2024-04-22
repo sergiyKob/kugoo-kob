@@ -1,0 +1,46 @@
+.breadcrumbs {
+    font-size: 12px;
+    color: var(--color-gray-600);
+    padding: 20px 0;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__item {
+        position: relative;
+
+        &:first-child {
+            padding-left: 20px;
+
+            &::before {
+                @include pseudo;
+                left: 0;
+                top: 0;
+                width: 13px;
+                height: 13px;
+                background-image: url('../img/icons-not-sprite/icon-house.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        &:not(:last-child) {
+            padding-right: 10px;
+
+            &::after {
+                content: '/';
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+    &__link--current {
+        color: var(--color-dark);
+    }
+}
