@@ -211,9 +211,6 @@ body {
     &--full {
         width: 100%;
     }
-
-
-
 }
 
 .link {
@@ -405,5 +402,59 @@ body {
 
     svg {
         fill: var(--color-white);
+    }
+}
+
+.input {
+    width: 100%;
+    padding: 15px 25px;
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--rounded-md);
+    transition: box-shadow var(--transition);
+
+    &:focus {
+        box-shadow: 0 0 0 3px var(--color-accent-30);
+    }
+}
+
+.checkbox {
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        .checkbox__custom {
+            box-shadow: 0 0 0 1px var(--color-accent)
+        }
+    }
+
+    &__input {
+        @include checkbox-hidden;
+
+        &:checked+.checkbox__custom {
+            &::before {
+                @include pseudo;
+                @include absolut-center;
+                width: 10px;
+                height: 8px;
+                background-image: url('../img/icons-not-sprite/icon-check.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+
+        &:focus+.checkbox__custom {
+            box-shadow: 0 0 0 3px var(--color-accent-30);
+        }
+    }
+
+    &__custom {
+        position: relative;
+        display: inline-block;
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: var(--rounded-sm);
+        transition: box-shadow var(--transition);
     }
 }

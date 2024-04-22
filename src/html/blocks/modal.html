@@ -1,18 +1,38 @@
-<button class="btn btn--primary btn--md" data-path="first" data-animation="fadeUp" data-speed="500">Open modal 1</button>
-
 <div class="modal">
     <div class="modal__container" data-target="first">
-        <button class="modal__close btn btn--primary btn--md btn--with-icon" type="button">
-            <svg class="modal__close-icon" width="16" height="16">
+        <button class="modal__close btn btn--only-icon" type="button">
+            <svg class="modal__close-icon" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
         </button>
         <div class="modal__content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vitae quasi alias modi aut corporis voluptate recusandae earum maiores culpa. Dolores perferendis vitae
-            quod culpa, odit possimus nulla modi atque, quo ullam a repellendus! Delectus laudantium id cumque expedita nostrum dolorum enim sapiente impedit dolorem. Ab numquam
-            iure praesentium voluptate!
-            <button class="btn btn--gray btn--md">click on me</button>
-            <input class="input-field" type="text" placeholder="name">
+            <div class="modal__content-left">
+                <h3 class="modal__title ttu">
+                    Менеджер позвонит вам в течение 5 минут
+                </h3>
+                <p class="modal__descr">
+                    ответит на все вопросы и проконсультирует по продуктам Kugoo
+                </p>
+                <form class="modal__form form-modal" action="#">
+                    <label class="form-modal__label">
+                        <input class="form-modal__input input" type="tel" name="tel" placeholder="+7 (___) __ - __ - __" required>
+                    </label>
+                    <button class="form-modal__btn btn btn--primary btn--lg btn--full text-center" type="submit">
+                        Позвоните мне
+                    </button>
+                    <label class="form-modal__agree checkbox">
+                        <input class="checkbox__input" type="checkbox">
+                        <span class="form-modal__checkbox checkbox__custom"></span>
+                        <span class="form-modal__agree-inner">
+                            Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+                            <a class="form-modal__link link" href="#">политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                </form>
+            </div>
+            <div class="modal__img">
+                <img src="img/modals/01.png" width="340" height="500" alt="smile girl">
+            </div>
         </div>
     </div>
 </div>

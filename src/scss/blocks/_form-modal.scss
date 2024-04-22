@@ -1,0 +1,31 @@
+.form-modal {
+
+    &__label {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    &__btn {
+        margin-bottom: 15px;
+    }
+
+    &__agree {
+        font-size: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    &__checkbox {
+        background-color: var(--color-bg);
+    }
+
+    &__link {
+        color: var(--color-accent);
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}

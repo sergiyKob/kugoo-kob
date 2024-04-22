@@ -10,6 +10,6 @@ import video from './modules/video.js';
 import sliderVideo from './modules/slider-video.js';
 import sliderBlog from './modules/slider-blog.js';
 import accordion from './modules/accordion.js';
+import modal from './modules/modal.js';
 // import menuActive from './modules/menuActive.js';
-// import modal from './modules/modal.js';
 // import showHideBlock from './modules/show-hide-block.js';
