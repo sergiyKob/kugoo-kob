@@ -2,7 +2,8 @@ const config = {
     mode: 'production',
 
     entry: {
-        index: './src/js/index.js'
+        index: './src/js/index.js',
+        catalog: './src/js/catalog.js'
     },
 
     output: {

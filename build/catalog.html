@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kugoo | Каталог</title>
+    <link rel="icon" href="img/logo.svg">
+    <link rel="preload" href="/fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Jost-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Jost-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Jost-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__top top-header">
+        <div class="top-header__container container">
+            <ul class="top-header__links">
+                <li class="top-header__item">
+                    <a class="top-header__link link" href="#">Сервис</a>
+                </li>
+                <li class="top-header__item">
+                    <a class="top-header__link link" href="#">Сотрудничество</a>
+                </li>
+                <li class="top-header__item">
+                    <a class="top-header__link link" href="#">Заказать звонок</a>
+                </li>
+            </ul>
+            <div class="online-chat">
+                <ul class="online-chat__list">
+                    <li class="online-chat__item">
+                        <a class="online-chat__link" href="#" title="viber">
+                            <svg class="online-chat__icon online-chat__icon--viber" width="12" height="12" aria-label="go to viber">
+                                <use xlink:href="img/sprite.svg#icon-viber"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="online-chat__item">
+                        <a class="online-chat__link" href="#" title="whatsapp">
+                            <svg class="online-chat__icon online-chat__icon--whatsapp" width="12" height="12" aria-label="go to whatsapp">
+                                <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="online-chat__item">
+                        <a class="online-chat__link" href="#" title="telegram">
+                            <svg class="online-chat__icon online-chat__icon--telegram" width="12" height="12" aria-label="go to telegram">
+                                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-header__phones phones">
+                <a class="phones__tel link" href="tel:78005055461">+7 (800) 505-54-61</a>
+                <button class="phones__btn" type="button">
+                    <svg class="phones__btn-icon" width="8" height="8" aria-label="open phones list">
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+                <ul class="phones__list">
+                    <li class="phones__item">
+                        <a class="phones__link" href="tel:78005055461">
+                            <div class="phones__title">Сервисный центр</div>
+                            <div class="phones__text">+ 7 (499) 350 76 92</div>
+                        </a>
+                    </li>
+                    <li class="phones__item">
+                        <a class="phones__link" href="tel:78005055461">
+                            <div class="phones__title">Оптовый отдел</div>
+                            <div class="phones__text">+ 7 (499) 350 76 92</div>
+                            <div class="phones__info">пн-сб 10:00 - 19:00</div>
+                        </a>
+                    </li>
+                    <li class="phones__item">
+                        <a class="phones__link" href="tel:78005055461">
+                            <div class="phones__title">Отдел рекламаций и претензий</div>
+                            <div class="phones__text">+ 7 (499) 350 76 92</div>
+                            <div class="phones__info">пн-сб 10:00 - 19:00</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header__middle container">
+        <a class="header__logo logo" href="#">
+            <img class="logo__img" src="img/logo.svg" width="116" height="43" alt="logo">
+        </a>
+        <div class="header__catalog">
+            <button class="header__catalog-btn btn btn--primary btn--with-icon" type="button">
+                <svg class="header__catalog-btn-icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-burger"></use>
+                </svg>
+                Каталог
+            </button>
+            <div class="catalog" style="width: 750px; height: 240px; ">
+                <ul class="catalog__categories">
+                    <li class="catalog__item catalog__item--active">
+                        <a class="catalog__link link" href="#">
+                            <svg class="catalog__icon" width="16" height="16">
+                                <use xlink:href="img/sprite.svg#icon-electric-scooter"></use>
+                            </svg>
+                            Электросамокаты
+                        </a>
+                        <div class="subcategories">
+                            <div class="subcategories__col">
+                                <div class="subcategories__title">Особенности</div>
+                                <ul class="subcategories__list">
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Внедорожный
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Городской
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Зимний
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            С сиденьем
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Без сиденья
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subcategories__col">
+                                <div class="subcategories__title">Для кого</div>
+                                <ul class="subcategories__list">
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для детей и подростков
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для взрослых
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для пенсионеров
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link link" href="#">
+                            <svg class="catalog__icon" width="16" height="16">
+                                <use xlink:href="img/sprite.svg#icon-scooter"></use>
+                            </svg>
+                            Электроскутеры
+                        </a>
+                        <div class="subcategories">
+                            <div class="subcategories__col">
+                                <div class="subcategories__title">Особенности</div>
+                                <ul class="subcategories__list">
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Внедорожный-22
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Городской-22
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Зимний-22
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            С сиденьем-22
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Без сиденья-22
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subcategories__col">
+                                <div class="subcategories__title">Для кого</div>
+                                <ul class="subcategories__list">
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для детей и подростков
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для взрослых
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для пенсионеров
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link link" href="#">
+                            <svg class="catalog__icon" width="16" height="16">
+                                <use xlink:href="img/sprite.svg#icon-electric-bike"></use>
+                            </svg>
+                            Электровелосипеды
+                        </a>
+                        <div class="subcategories">
+                            <div class="subcategories__col">
+                                <div class="subcategories__title">Особенности</div>
+                                <ul class="subcategories__list">
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Внедорожный-333
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Городской-333
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Зимний-333
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            С сиденьем-333
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Без сиденья-333
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subcategories__col">
+                                <div class="subcategories__title">Для кого</div>
+                                <ul class="subcategories__list">
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для детей и подростков
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для взрослых
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для пенсионеров
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link link" href="#">
+                            <svg class="catalog__icon" width="16" height="16">
+                                <use xlink:href="img/sprite.svg#icon-vacuum-cleaner"></use>
+                            </svg>
+                            Робот-пылесосы
+                        </a>
+                        <div class="subcategories">
+                            <div class="subcategories__col">
+                                <div class="subcategories__title">Особенности</div>
+                                <ul class="subcategories__list">
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Внедорожный-444
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Городской-444
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Зимний-444
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            С сиденьем-444
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Без сиденья-444
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subcategories__col">
+                                <div class="subcategories__title">Для кого</div>
+                                <ul class="subcategories__list">
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для детей и подростков
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для взрослых
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для пенсионеров
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link link" href="#">
+                            <svg class="catalog__icon" width="16" height="16">
+                                <use xlink:href="img/sprite.svg#icon-weighing-scale"></use>
+                            </svg>
+                            Весы
+                        </a>
+                        <div class="subcategories">
+                            <div class="subcategories__col">
+                                <div class="subcategories__title">Особенности</div>
+                                <ul class="subcategories__list">
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Внедорожный-555
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Городской-555
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Зимний-555
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            С сиденьем-555
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Без сиденья-555
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subcategories__col">
+                                <div class="subcategories__title">Для кого</div>
+                                <ul class="subcategories__list">
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для детей и подростков
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для взрослых
+                                        </a>
+                                    </li>
+                                    <li class="subcategories__item">
+                                        <a class="subcategories__link link" href="#">
+                                            Для пенсионеров
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__search">
+            <form class="search" action="#">
+                <select class="search__select btn btn--secondary">
+                    <option selected>Везде</option>
+                    <option>Самокаты</option>
+                    <option>Аксессуары</option>
+                </select>
+                <label class="search__label">
+                    <input class="search__input" type="search" name="search" placeholder="Искать самокат KUGO" required>
+                </label>
+                <button class="search__btn btn btn--primary" type="submit">
+                    <svg class="search__btn-icon" width="16" height="16">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <ul class="header__actions actions-header">
+            <li class="actions-header__item">
+                <a class="actions-header__btn btn btn--only-icon" href="#" aria-label="сравнить товар">
+                    <svg class="actions-header__btn-icon" width="16" height="16">
+                        <use xlink:href="img/sprite.svg#icon-compare"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="actions-header__item">
+                <a class="actions-header__btn btn btn--only-icon" href="#" aria-label="открыть список желаний">
+                    <svg class="actions-header__btn-icon" width="16" height="16">
+                        <use xlink:href="img/sprite.svg#icon-heart-empty"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="actions-header__item">
+                <button class="actions-header__btn btn btn--with-icon" type="button" data-cart>
+                    <svg class="actions-header__btn-icon" width="20" height="20" data-cart-icon>
+                        <use xlink:href="img/sprite.svg#icon-cart-empty"></use>
+                    </svg>
+                    Корзина
+                </button>
+                <div class="cart">
+                    <div class="cart__top">
+                        <span class="cart__title">В вашей корзине</span>
+                        <span class="cart__count">5 товаров</span>
+                    </div>
+
+                    <ul class="cart__list hidden-scrollbar custom-scrollbar">
+                        <li class="cart__item">
+                            <article class="cart-product">
+                                <div class="cart-product__img">
+                                    <img src="img/product/01.jpg" width="50" height="50" alt="Kugoo Kirin M4">
+                                </div>
+                                <h3 class="cart-product__title">
+                                    <a class="cart-product__link link" href="#" title="Kugoo Kirin M4">Kugoo Kirin M4</a>
+                                </h3>
+                                <div class="cart-product__info">
+                                    <span class="cart-product__price">29 900 ₽</span>
+                                    <span class="cart-product__count">1 шт.</span>
+                                </div>
+                                <button class="cart-product__del btn btn--only-icon">
+                                    <svg class="cart-product__del-icon" width="20" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-del"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </li>
+                        <li class="cart__item">
+                            <article class="cart-product">
+                                <div class="cart-product__img">
+                                    <img src="img/product/01.jpg" width="50" height="50" alt="Kugoo Kirin M4">
+                                </div>
+                                <h3 class="cart-product__title">
+                                    <a class="cart-product__link link" href="#" title="Kugoo Kirin M4 Lorem ipsum dolor, sit amet consectetur">Kugoo Kirin M4 Lorem ipsum dolor, sit
+                                        amet consectetur</a>
+                                </h3>
+                                <div class="cart-product__info">
+                                    <span class="cart-product__price">29 900 ₽</span>
+                                    <span class="cart-product__count">1 шт.</span>
+                                </div>
+                                <button class="cart-product__del btn btn--only-icon">
+                                    <svg class="cart-product__del-icon" width="20" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-del"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </li>
+                        <li class="cart__item">
+                            <article class="cart-product">
+                                <div class="cart-product__img">
+                                    <img src="img/product/01.jpg" width="50" height="50" alt="Kugoo Kirin M4">
+                                </div>
+                                <h3 class="cart-product__title">
+                                    <a class="cart-product__link link" href="#" title="Kugoo Kirin M4">Kugoo Kirin M4</a>
+                                </h3>
+                                <div class="cart-product__info">
+                                    <span class="cart-product__price">29 900 ₽</span>
+                                    <span class="cart-product__count">1 шт.</span>
+                                </div>
+                                <button class="cart-product__del btn btn--only-icon">
+                                    <svg class="cart-product__del-icon" width="20" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-del"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </li>
+                        <li class="cart__item">
+                            <article class="cart-product">
+                                <div class="cart-product__img">
+                                    <img src="img/product/01.jpg" width="50" height="50" alt="Kugoo Kirin M4">
+                                </div>
+                                <h3 class="cart-product__title">
+                                    <a class="cart-product__link link" href="#" title="Kugoo Kirin M4">Kugoo Kirin M4</a>
+                                </h3>
+                                <div class="cart-product__info">
+                                    <span class="cart-product__price">29 900 ₽</span>
+                                    <span class="cart-product__count">1 шт.</span>
+                                </div>
+                                <button class="cart-product__del btn btn--only-icon">
+                                    <svg class="cart-product__del-icon" width="20" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-del"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </li>
+                        <li class="cart__item">
+                            <article class="cart-product">
+                                <div class="cart-product__img">
+                                    <img src="img/product/01.jpg" width="50" height="50" alt="Kugoo Kirin M4">
+                                </div>
+                                <h3 class="cart-product__title">
+                                    <a class="cart-product__link link" href="#" title="Kugoo Kirin M4">Kugoo Kirin M4</a>
+                                </h3>
+                                <div class="cart-product__info">
+                                    <span class="cart-product__price">29 900 ₽</span>
+                                    <span class="cart-product__count">1 шт.</span>
+                                </div>
+                                <button class="cart-product__del btn btn--only-icon">
+                                    <svg class="cart-product__del-icon" width="20" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-del"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </li>
+                    </ul>
+
+                    <div class="cart__bottom">
+                        <div class="cart__summ">
+                            Сумма:
+                            <div class="cart__summ-price">59 800 ₽</div>
+                        </div>
+                        <button class="cart__btn btn btn--primary btn--sm">Оформить заказ</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link link" href="#">О магазине</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="#">Доставка и оплата</a>
+                        <span class="menu__info">Доступна рассрочка</span>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="#">Тест-драйв</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="#">Блог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="#">Контакты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="#">Акции</a>
+                        <span class="menu__info">%</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+        <div class="main">
+            <h1 class="sr-only">Каталог товаров</h1>
+            <div class="top-banner" style="background-image: url('img/banners/scooter2.jpg');">
+    <div class="container">
+        <h2 class="top-banner__title title">
+            Электросамокаты Kugoo Kirin
+        </h2>
+    </div>
+</div>
+
+
+
+            
+        </div>
+        
+    </div>
+    <script defer src="./js/catalog.bundle.js"></script>
+</body>
+
+</html>
