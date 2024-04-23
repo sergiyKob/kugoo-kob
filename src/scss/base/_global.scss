@@ -420,6 +420,9 @@ body {
 .checkbox {
     cursor: pointer;
     user-select: none;
+    transition:
+        color var(--transition),
+        opacity var(--transition);
 
     &:hover {
         .checkbox__custom {
@@ -454,6 +457,7 @@ body {
         flex-shrink: 0;
         width: 16px;
         height: 16px;
+        background-color: var(--color-white);
         border-radius: var(--rounded-sm);
         transition: box-shadow var(--transition);
     }
