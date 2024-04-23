@@ -587,7 +587,7 @@
     </div>
 </header>
         <div class="main">
-            <!--  <div class="breadcrumbs">
+            <div class="breadcrumbs">
                 <div class="container">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
@@ -622,7 +622,7 @@
             <a class="btn btn--secondary btn--lg" href="#">Подробнее</a>
         </div>
     </div>
-</div> -->
+</div>
             <section class="catalog-layout">
     <div class="container">
         <h1 class="sr-only">Каталог товаров</h1>
@@ -647,7 +647,20 @@
                 <div class="filter">
                     <div class="filter__block">
                         <h3 class="filter__title">Цена</h3>
-                        range-slider
+                        <div class="range-slider">
+                            <div id="range-slider"></div>
+                            <div class="range-slider__inputs">
+                                <label class="range-slider__label">
+                                    <input id="range-slider-input-0" class="range-slider__input input"
+                                           type="number" min="0" max="90000">
+                                </label>
+                                <div class="range-slider__delimiter"></div>
+                                <label class="range-slider__label">
+                                    <input id="range-slider-input-1" class="range-slider__input input"
+                                           type="number" min="0" max="90000">
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <div class="filter__block">
                         <h3 class="filter__title">Тип</h3>
@@ -1241,7 +1254,44 @@
 
 
 
-            
+            <div class="modal">
+    <div class="modal__container" data-target="first">
+        <button class="modal__close btn btn--only-icon" type="button">
+            <svg class="modal__close-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="modal__content">
+            <div class="modal__content-left">
+                <h3 class="modal__title ttu">
+                    Менеджер позвонит вам в течение 5 минут
+                </h3>
+                <p class="modal__descr">
+                    ответит на все вопросы и проконсультирует по продуктам Kugoo
+                </p>
+                <form class="modal__form form-modal" action="#">
+                    <label class="form-modal__label">
+                        <input class="form-modal__input input" type="tel" name="tel" placeholder="+7 (___) __ - __ - __" required>
+                    </label>
+                    <button class="form-modal__btn btn btn--primary btn--lg btn--full text-center" type="submit">
+                        Позвоните мне
+                    </button>
+                    <label class="form-modal__agree checkbox">
+                        <input class="checkbox__input" type="checkbox">
+                        <span class="form-modal__checkbox checkbox__custom"></span>
+                        <span class="form-modal__agree-inner">
+                            Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
+                            <a class="form-modal__link link" href="#">политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                </form>
+            </div>
+            <div class="modal__img">
+                <img src="img/modals/01.png" width="340" height="500" alt="smile girl">
+            </div>
+        </div>
+    </div>
+</div>
         </div>
         
     </div>
