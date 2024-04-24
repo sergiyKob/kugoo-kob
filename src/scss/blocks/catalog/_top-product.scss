@@ -1,0 +1,77 @@
+.top-product {
+    position: relative;
+    color: var(--color-white);
+    border-radius: var(--rounded-lg);
+    background: radial-gradient(250.91% 125.65% at -2.16% 100%, rgb(255, 207, 113) 0%, rgb(243, 167, 18) 100%);
+
+    &__heading {
+        position: relative;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 15px 15px 15px 45px;
+        border-bottom: 1px solid var(--color-white-20);
+
+        &::before {
+            @include pseudo;
+            left: 15px;
+            top: 15px;
+            width: 20px;
+            height: 20px;
+            background-image: url('../img/icons-not-sprite/fire.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 60px auto;
+        grid-template-rows: auto auto;
+        column-gap: 20px;
+        padding: 15px;
+    }
+
+    &__img {
+        grid-row: span 2;
+        width: 60px;
+        height: 60px;
+        background-color: var(--color-gray-200);
+        border-radius: var(--rounded-md);
+
+        img {
+            border-radius: var(--rounded-md);
+            aspect-ratio: 1/1;
+        }
+    }
+
+    &__title {
+        @include line-clamp(1);
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__link {
+        @include line-clamp(1);
+        display: block;
+
+        @include hover {
+            text-decoration: underline;
+        }
+
+        &::before {
+            @include pseudo;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: var(--rounded-lg);
+        }
+    }
+
+    &__price {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}

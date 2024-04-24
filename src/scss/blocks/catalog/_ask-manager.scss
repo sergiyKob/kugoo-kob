@@ -1,0 +1,26 @@
+.ask-manager {
+    width: 255px;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 600;
+    background: radial-gradient(202.55% 104.39% at 82.43% 76.38%, rgb(143, 232, 101) 0%, rgb(73, 172, 27) 100%);
+    border-radius: var(--rounded-lg);
+    cursor: pointer;
+
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 100%;
+        padding: 27px 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+    }
+
+    &__text {
+        @include line-clamp(2);
+        max-width: 120px;
+    }
+}
