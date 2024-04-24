@@ -6,7 +6,11 @@
         margin-bottom: 30px;
     }
 
-    &__sort {}
+    &__sort {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 
     &__body {
         display: grid;
@@ -33,8 +37,6 @@
     }
 }
 
-
-
 .sort-catalog {}
 
 .filter {
@@ -53,8 +55,6 @@
         font-weight: 600;
         margin-bottom: 15px;
     }
-
-    &__list {}
 
     &__item {
         &:not(:last-child) {

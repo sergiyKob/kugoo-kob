@@ -7,7 +7,7 @@ if (slider) {
     noUiSlider.create(slider, {
         start: [15000, 55000],
         connect: true,
-        step: 1,
+        step: 100,
         range: {
             'min': 0,
             'max': 90000
